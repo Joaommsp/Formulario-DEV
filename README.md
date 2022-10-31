@@ -11,4 +11,12 @@
 <p align="center">• CSS</p>
 <p align="center">• JavaScript</p>
 
+# Autor
+
+<p align="center">
+<p>Dev: João Marcos Melo</p>
+<p>E-mail: jmmsp2003@hotmail.com</p>
+<p>Tel:(75)98827-5212 (whatsapp)</p>
+</p>
+
 <img src="img\J.M-removebg-preview.png">
