@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulário de cadastro dedesenvolvedor" />
+    <meta name="author" content="João Marcos" />
+    <link rel="shortcut icon" href="img/form_icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" media="(min-width:800px)" href="src/style.css" />
+    <link rel="stylesheet" media="(max-width: 600px)" href="src/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px) and (max-width: 800px)"
+      href="src/tablet.css"
+    />
+    <link rel="stylesheet" media="(min-width:800px)" href="src/style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <img
+        src="img/J.M-removebg-preview.png"
+        alt="logo"
+        title="Logo João Marcos"
+        id="logo"
+      />
+      <nav id="menu">
+        <ul>
+          <li>
+            <a
+              href="https://instagram.com/m7_joao?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              title="Instagram"
+              >Instagram</a
+            >
+            <img src="svg files/instagram.svg" alt="" />
+          </li>
+          <li>
+            <a
+              href="https://github.com/joaom22zl1"
+              target="_blank"
+              title="GitHub"
+              >GitHub</a
+            >
+            <img src="svg files/github.svg" alt="" />
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/joão-marcos-525564226/"
+              target="_blank"
+              title="Linkedin"
+              >Linkedin</a
+            >
+            <img src="svg files/linkedin.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="presentation">
+      <h1 id="titulo_site">Seja um Programador</h1>
+    </div>
+    <div class="campo">
+      <h2 id="titulo">Cadastro de DEVs</h2>
+      <p id="subtitulo">Complete suas informações</p>
+      <br />
+    </div>
+    <section class="conteudo">
+      <img src="img/HMTL-CSS-JS.png" alt="" id="html-css-js" />
+      <form action="">
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              required
+              title="Seu Nome"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              required
+              title="Seu Sobrenome"
+            />
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="email"><strong>Email</strong></label>
+          <input
+            type="email"
+            name="email"
+            id="imail"
+            required
+            title="Seu E-mail"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="">De qual lado da aplicação você desenvolve?</label>
+          <label for=""
+            ><input
+              type="radio"
+              name="devweb"
+              value="frontend"
+              checked
+            />Front-end</label
+          >
+          <label for=""
+            ><input type="radio" name="devweb" value="backend" />Back-end</label
+          >
+          <label for=""
+            ><input type="radio" name="devweb" id="fullstack" />Fullstack</label
+          >
+        </div>
+
+        <div class="campo">
+          <label for="senioridade">Senioridade</label>
+          <select name="" id="senioridade">
+            <option selected disabled value="">Selecione</option>
+            <option value="">Junior</option>
+            <option value="">Pleno</option>
+            <option value="">Senior</option>
+          </select>
+        </div>
+
+        <fieldset class="grupo">
+          <div id="check">
+            <label
+              ><strong>Selecione as tecnologias que você utiliza</strong></label
+            >
+            <br />
+            <br />
+            <input
+              type="checkbox"
+              name="tecnologia1"
+              id="tecnologia1"
+              value="HTML"
+            />
+            <label for="tenologia1">HTML</label>
+
+            <input
+              type="checkbox"
+              name="tecnolgia2"
+              id="tecnologia2"
+              value="CSS"
+            />
+            <label for="tecnologia2">CSS</label>
+
+            <input
+              type="checkbox"
+              name="tecnologia3"
+              id="tecnologia3"
+              value="JavaScript"
+            />
+            <label for="tecnologia3">JavaScript</label>
+
+            <input
+              type="checkbox"
+              name="tecnologia4"
+              id="tecnologia4"
+              value="php"
+            />
+            <label for="tecnologia4">PHP</label>
+
+            <input
+              type="checkbox"
+              name="tecnologia5"
+              id="tecnologia5"
+              value="C#"
+            />
+            <label for="tecnologia5">C#</label>
+
+            <input
+              type="checkbox"
+              name="tecnologia6"
+              id="tecnologia6"
+              value="phyton"
+            />
+            <label for="tecnologia6">Phyton</label>
+
+            <input
+              type="checkbox"
+              name="tecnologia7"
+              id="tecnologia7"
+              value="java"
+            />
+            <label for="tecnologia7">Java</label>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <br />
+          <label for="">Conte um pouco da sua experiência</label>
+          <textarea name="" id="" cols="50" rows="6"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+      </form>
+    </section>
+    <script src="src/main.js"></script>
+  </body>
+</html>
